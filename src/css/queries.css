@@ -34,7 +34,7 @@
 }
 
 /*************************************/
-/* BELOW 800PX  (PHONE) */
+/* BELOW 800PX*/
 /*************************************/
 
 @media (max-width: 50rem) {
@@ -56,13 +56,19 @@
     .service-box {
         grid-template-columns: repeat(1, 1fr);
     }
+    .serevice-card {
+        max-width: 70%;
+        margin: auto;
+    }
     .pricing-box {
         grid-template-columns: repeat(1, 1fr);
-        margin : 0 auto
     }
     .membership-card {
-        max-width: 80%;
+        min-width: 80%;
+        margin: 0 auto;
     }
+   
+    
 
 
     .heading-primary{ 
@@ -74,7 +80,7 @@
 /* BELOW 620PX  (PHONE) */
 /*************************************/
 
-@media (max-width: 38.75rem) {
+@media (max-width: 39rem) {
     html {
         font-size: 40%;
     }
@@ -94,6 +100,7 @@
     .company-name img{
         height: 7.2rem;
     }
+
     .menu-bar {
         display: block;
     }
@@ -168,23 +175,24 @@
         order: 3;
     }
     .catalog-main-content {
-        grid-template-columns: repeat(1 , 1fr);  
+        grid-template-columns: repeat(1 , 1fr); 
         gap: 1rem;    
     }
     .product-img img {
-        width: 40%;
+        width: 50%;
     }
 
 
     .product-description {
         flex-direction: row;
+        justify-content: center;
         gap: 1rem;
     }
 
     .description-btn {
         font-size: 1.6rem;
         border-radius: 2rem;
-        padding: 0.6rem 1.6rem;
+        padding: 1.2rem 2.2rem;
         font-weight: 500;
         box-shadow: 0 2.4rem 4.8rem rgba(59, 55, 51, 0.178);
     }
@@ -197,6 +205,7 @@
         align-items: flex-start;
         font-size: 1.6rem;
     }
+
 
 }
 
