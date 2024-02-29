@@ -51,8 +51,15 @@
         width: 50%;
     }
     .des1 img, .des2 img{
-        width : 100%
+        /* width : 100% */
     }
+
+.des1::before,
+.des1::after {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
     .service-box {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -158,17 +165,22 @@
     .ai {
         grid-template-columns: repeat(1, 1fr);
     }
-    .des1 img,.des2 img {
-        width: 50%;
-    }
+
+    .des1::before,
+    .des1::after {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 6px;
+}
+
     .para1 {
         order: 1;
     }
     
-    .des1 {
+    .order1 {
         order: 2;
     }
-    .des2 {
+    .order2 {
         order: 4;
     }
     .para2 {
